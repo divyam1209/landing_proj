@@ -48,6 +48,11 @@
                 width: 100% !important;
             }
         }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
   </head>
   <body>
@@ -61,13 +66,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#jumbotron">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#content">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Download my App</a>
+                <a class="nav-link" href="#footer">Download my App</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -79,7 +84,7 @@
         </div>
       </nav>
 
-      <div class="jumbotron">
+      <div class="jumbotron" id="jumbotron">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
